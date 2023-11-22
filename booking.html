@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images/title-img.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>CMCBistro</title>
+  
+    <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top nav-menu text-white">
+        <a href="index.html" class="navbar-brand text-white text-uppercase">
+          <span class="h1 font-weight-bold">C</span>
+          <span class="h2 font font-weight-bold">M</span>
+          <span class="h1 font-weight-bold">C</span>
+          <span class="h1 font-weight-bold"> Bistro</span>
+        </a>
+        <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <div class="bg-light line1"></div>
+          <div class="bg-light line2"></div>
+          <div class="bg-light line3"></div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="myNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a href="index.html" class="m-2 menu-item" target="_blank">Home</a>
+            </li>
+            <li>
+              <a href="menu.html" class="m-2 menu-item" target="_blank">Menu</a>
+            </li>
+  
+            <!-- Add a dropdown for "Specials" -->
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn text-uppercase font-weight-bold">Specials</button>
+                <div class="dropdown-content">
+                  <a class="nav-link text-light" href="chef-specials.html" target="_blank">Chef's Signature Dish</a>
+                  <a class="nav-link text-light" href="house-specials.html" target="_blank">House Specials</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="aboutus.html" class="m-2 menu-item" target="_blank">About Us</a>
+              </li>
+            <li>
+              <a href="booking.html" class="m-2 menu-item nav-active" target="_blank">Booking</a>
+              </li>
+            <li>
+              <a href="contact.html" class="m-2 menu-item" target="_blank">Contact</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    
+      
+
+    <!-- Booking -->
+    <section class="p-5 booking">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <h1 class="display-4 mb-4" style="border-bottom: 3px solid #343a40;">Book a Table</h1>
+              <div class="underline mb-4"></div>
+    
+              <!-- Booking Form -->
+              <form action="#" method="post" id="bookingForm">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Full Name" id="name" name="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="example@gmail.com" id="email" name="email" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" placeholder=" Ex. 085 234 4567" id="phone" name="phone" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="time">Time</label>
+                      <select class="form-control" id="time" name="time" required>
+                        <option value="" disabled selected>Select a time</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="17:15">5:15 PM</option>
+                        <option value="17:30">5:30 PM</option>
+                        <option value="17:45">5:45 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="18:15">6:15 PM</option>
+                        <option value="18:30">6:30 PM</option>
+                        <option value="18:45">6:45 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="19:15">7:15 PM</option>
+                        <option value="19:30">7:30 PM</option>
+                        <option value="19:45">7:45 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="20:15">8:15 PM</option>
+                        <option value="20:30">8:30 PM</option>
+                        <option value="20:45">8:45 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="message">Special Requests</label>
+                    <textarea class="form-control" placeholder="Please input special request upon booking as requests made on the night may not be fulfilled" id="message" name="message" rows="4"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn-book btn-primary">Submit Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-5 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="pb-3">Compliance</h5>
+                    <ul class="list-inline">
+                      <li><a href="https://www.bordbia.ie/farmers-growers/get-involved/become-quality-assured/" target="_blank"><img src="images/Bord-Bia.jpeg" alt="Image of quality assurance" class="img-fluid" width="200" height="100"></a></li>
+                      <li><a href="https://www.failteireland.ie/" target="_blank"><img src="images/Covid.jpeg" alt="Image of covid compliance" class="img-fluid" width="100" height="50"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="pb-3">Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li>Monday - Thursday: 12PM - 9PM</li>
+                        <li>Friday: 12PM - 10:30PM</li>
+                        <li>Saturday: 12PM - 10:30PM</li>
+                        <li>Sunday: 2PM - 9PM</li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="pb-3">Find Us</h5>
+                    <p>45 Sundrive Rd, Kimmage, Harold's Cross, Dublin 12, D12 R285</p>
+                    <a href="https://www.google.com/maps/place/Montos+Sundrive/@53.3208421,-6.2950045,17z/data=!3m1!4b1!4m6!3m5!1s0x48670c72bfe8b761:0x49129130034a30fa!8m2!3d53.3208389!4d-6.2924242!16s%2Fg%2F1jkwnv829?entry=ttu" target="_blank">
+                        <img src="images/Google-Maps.jpg" alt="Image of map" class="img-fluid">
+                    </a>
+                </div>
+    
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="pb-3">Subscribe</h5>
+                    <p class="small">Sign up to receive our latest offers, menu updates, and spontaneous discounts.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email Address">
+                            <div class="input-group-append">
+                                <a href="contact.html" target="_blank" class="btn-subscribe bg-danger p-2 text-white text-uppercase font-weight-bold">Subscribe</a>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x text-primary"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p fa-2x text-danger"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x text-light"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x text-info"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x text-danger"></i></a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="row border-top mt-4 pt-4">
+                <div class="col text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fab fa-cc-mastercard fa-3x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-cc-amex fa-3x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-amazon-pay fa-3x"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-paypal fa-3x text-info"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-apple-pay fa-3x"></i></li>
+                    </ul>
+                    <p>&copy; 2023 Copyright, All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+  

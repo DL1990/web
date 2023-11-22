@@ -1,0 +1,189 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header{
+    height: 100vh;
+    background: url(images/restaurant.jpg) no-repeat center center /cover;
+  }
+
+  /* Navbar */
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  padding: 30px;
+  transition: all .3s;
+}
+
+.menu-item {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition:  color .8s;
+}
+.nav-active {
+  color: #70aed2;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: #eee;
+  letter-spacing: 1px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+ color: #70aed2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  background-color: #eee;
+  transition: all .4s;
+}
+  
+    /*Banner*/
+.banner{
+  position:absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+.banner-heading {
+  animation-name: anim;
+  animation-duration: 2s;
+}
+
+.banner-par{
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.btn {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation: pulse 2s ease-in-out 0.7s infinite;
+  animation-delay: .7s;
+  position:absolute;
+  top: 10%;
+  border-color: #eee;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  /*About Us*/
+
+  .restaurant {
+    padding: 30px;
+    margin-top: 70px;
+  }
+
+  .team-section {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    padding: 30px;
+    margin-top: 70px;
+  }
+  
+  .corporate-record {
+    padding: 30px;
+    margin-top: 70px;
+  }
+
+    /*Menu*/
+
+    .menu {
+      margin-top: 70px;
+      padding: 30px;
+    }
+
+    .menu-img {
+      margin-bottom: 40px;
+      padding: 30px;
+    }
+
+     /*Chef-Special*/
+
+    .chefs-special {
+      padding: 30px;
+      margin-top: 80px;
+    }
+
+    /*House Special*/
+
+    .coddle {
+      padding: 30px;
+      margin-top: 80px;
+    }
+
+    /*Booking*/
+
+    .booking {
+      margin-top: 80px;
+      padding: 30px;
+    }
+
+    /*Contact*/
+
+    .contact {
+      margin-top: 80px;
+      padding: 30px; 
+    }
+
+   /*footer*/
+   footer {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    padding: 30px;
+  }
